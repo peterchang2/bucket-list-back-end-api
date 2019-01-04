@@ -13,6 +13,20 @@
 
 * [Entity Relationship Diagrams](https://i.imgur.com/1WmRSOu.png)
 
+## API Routes and Paths
+
+| Verb   | URI Pattern            | Controller#Action |
+|--------|------------------------|-------------------|
+| POST   | `/sign-up`             | `users#signup`    |
+| POST   | `/sign-in`             | `users#signin`    |
+| DELETE | `/sign-out`            | `users#signout`   |
+| PATCH  | `/change-password`     | `users#changepw`  |
+| POST   | `/items`               | `items#create`    |
+| GET    | `/items`               | `items#index`     |
+| GET    | `/items/:id`           | `items#show`      |
+| PATCH  | `/items/:id`           | `items#update`    |
+| DELETE | `/items/:id/`          | `items#delete`    |
+
 # List of Technologies Used
 
 * Express
