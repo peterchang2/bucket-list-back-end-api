@@ -13,6 +13,13 @@
 
 * [Entity Relationship Diagrams](https://i.imgur.com/1WmRSOu.png)
 
+# List of Technologies Used
+
+* Express
+* Node.js
+* Mongodb
+* Mongoose
+
 ## API Routes and Paths
 
 | Verb   | URI Pattern            | Controller#Action |
@@ -26,10 +33,3 @@
 | GET    | `/items/:id`           | `items#show`      |
 | PATCH  | `/items/:id`           | `items#update`    |
 | DELETE | `/items/:id/`          | `items#delete`    |
-
-# List of Technologies Used
-
-* Express
-* Node.js
-* Mongodb
-* Mongoose
