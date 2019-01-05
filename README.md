@@ -20,7 +20,7 @@
 * Mongodb
 * Mongoose
 
-## API Routes and Paths
+# API Routes and Paths
 
 | Verb   | URI Pattern            | Controller#Action |
 |--------|------------------------|-------------------|
