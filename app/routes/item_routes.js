@@ -30,7 +30,7 @@ const router = express.Router()
 
 // INDEX
 // GET /items
-router.get('/items', requireToken, (req, res) => {
+router.get('/items', (req, res) => {
   Item.find()
     .then(items => {
       // `items` will be an array of Mongoose documents
@@ -79,7 +79,7 @@ router.patch('/items/:id', requireToken, (req, res) => {
   // if the client attempts to change the `owner` property by including a new
   // owner, prevent that by deleting that key/value pair
   delete req.body.item.owner
-
+  let id
   Item.findById(req.params.id)
     .then(handle404)
     .then(item => {
@@ -95,12 +95,14 @@ router.patch('/items/:id', requireToken, (req, res) => {
           delete req.body.item[key]
         }
       })
-
+      id = item._id
       // pass the result of Mongoose's `.update` to the next `.then`
       return item.update(req.body.item)
     })
+
     // if that succeeded, return 204 and no JSON
-    .then(() => res.sendStatus(204))
+    .then(() => Item.findById(id))
+    .then(item => res.status(200).json({ item: item.toObject() }))
     // if an error occurs, pass it to the handler
     .catch(err => handle(err, res))
 })
