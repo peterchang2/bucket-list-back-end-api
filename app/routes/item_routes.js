@@ -32,11 +32,25 @@ const router = express.Router()
 // GET /items
 router.get('/items', requireToken, (req, res) => {
   Item.find()
+  // console.log(Item.find({owner: req.user._id}))
     .then(items => {
+      // console.log('USER ID:', req.user.id)
+
+      const itemOwner = items.filter(item => {
+        // console.log('owners', JSON.stringify(item.owner))
+        // console.log('req', JSON.stringify(req.user._id))
+        // console.log('Why arent these equal?? ::', JSON.stringify(item.owner) === JSON.stringify(req.user._id))
+
+        if (JSON.stringify(item.owner) === JSON.stringify(req.user._id)) {
+          // console.log('\nIS THIS WORKING\n')
+          return true
+        }
+      })
+      console.log('item:', itemOwner)
       // `items` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
       // apply `.toObject` to each one
-      return items.map(item => item.toObject())
+      return itemOwner.map(item => item.toObject())
     })
     // respond with status 200 and JSON of the items
     .then(items => res.status(200).json({ items: items }))
