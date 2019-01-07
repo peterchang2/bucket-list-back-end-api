@@ -8,6 +8,7 @@
 
 * [Bucket List Front End Client](https://github.com/WDI-28-peter-kwesi-lucas/bucket-list-front-end-client/)
 * [Heroku](https://secure-bastion-12965.herokuapp.com/)
+* [Deployed Site](https://wdi-28-peter-kwesi-lucas.github.io/bucket-list-front-end-client/)
 
 # Entity Relationship Diagrams
 
