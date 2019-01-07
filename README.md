@@ -37,4 +37,8 @@
 
 # Unsolved problems
 
+
+
 # Planning, process, and problem-solving strategies
+
+When we started our group project, we agreed that Lucas and Kwesi would work on the back-end API while Peter would start out with the front-end client. Once our back-end API was completed, Kwesi helped Peter finish the front-end while Lucas filled out both README's, so we could get those requirements out of the way sooner to focus on adding additional front-end features after completing all requirements. Whenever we ran into an issue, we would first search Google/StackOverflow to find the specific issue that we ran into, or, as a last resort, we would open an issue cue and have an instructor help us remotely.
