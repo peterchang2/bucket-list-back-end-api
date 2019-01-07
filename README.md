@@ -34,3 +34,7 @@
 * Node.js
 * Mongodb
 * Mongoose
+
+# Unsolved problems
+
+# Planning, process, and problem-solving strategies
