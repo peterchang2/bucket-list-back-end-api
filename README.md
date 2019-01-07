@@ -37,7 +37,7 @@
 
 # Unsolved problems
 
-
+As of right now, we don't really have major unsolved problems that are in our way. The app works fine and all auth and item actions do not return any errors. As for future plans, we currently don't have any future plans for this app, although that could very well change in the near future.
 
 # Planning, process, and problem-solving strategies
 
