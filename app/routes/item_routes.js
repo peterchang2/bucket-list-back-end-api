@@ -46,7 +46,7 @@ router.get('/items', requireToken, (req, res) => {
           return true
         }
       })
-      console.log('item:', itemOwner)
+      // console.log('item:', itemOwner)
       // `items` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
       // apply `.toObject` to each one
