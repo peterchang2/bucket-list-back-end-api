@@ -7,7 +7,7 @@ Once a user signs up and signs in, the user is able to create a bucket list item
 - Bucket List Front End Repo: https://github.com/WDI-28-peter-kwesi-lucas/bucket-list-front-end-client
 - Bucket List Back End Repo: https://github.com/WDI-28-peter-kwesi-lucas/bucket-list-back-end-api/
 - Deployed Site: https://wdi-28-peter-kwesi-lucas.github.io/bucket-list-front-end-client/
-- Heroku: https://secure-bastion-12965.herokuapp.com/
+- Heroku: https://stark-shore-63674.herokuapp.com/
 
 ### Entity Relationship Diagrams
 ![Entity Relationship Diagrams](https://i.imgur.com/1WmRSOu.png)
